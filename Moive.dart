@@ -18,7 +18,7 @@ class Movie{
       image: json['Images'][0],
       writer: json['Writer'],
       year: json['Year'],
-      plot: json['Plot']
+      plot: json['Plot'],
     );
 
   }
@@ -27,6 +27,9 @@ class Movie{
     'Title': title,
     'Director': director,
     'Images' : image,
+    'Writer' : writer,
+    'Year' : year,
+    'Plot' : plot,
   };
 
 }
