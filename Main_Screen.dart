@@ -10,8 +10,10 @@ class MainScreen extends StatelessWidget{
  MainScreen ({super.key});
 
  Widget build(BuildContext context) {
-  return Scaffold(
-    body: HttpWidget(),
+  return MaterialApp(
+    home: Scaffold(
+      body: HttpWidget(),
+    ),
   );
  }
 }
