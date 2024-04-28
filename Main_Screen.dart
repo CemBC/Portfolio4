@@ -46,4 +46,8 @@ class _HttpWidgetState extends State<HttpWidget> {
     return returnedValue;
 
   }
+
+  Widget build(BuildContext context) {
+    return Placeholder();
+  }
 }
