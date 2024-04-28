@@ -4,6 +4,7 @@ import 'package:portfolio4/Portfolio4/Moive.dart';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:portfolio4/Portfolio4/MovieListView.dart';
 
 class MainScreen extends StatelessWidget{
  MainScreen ({super.key});
@@ -48,6 +49,12 @@ class _HttpWidgetState extends State<HttpWidget> {
   }
 
   Widget build(BuildContext context) {
-    return Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: MovieListView(movies: movies),
+        ),
+      )
+    );
   }
 }

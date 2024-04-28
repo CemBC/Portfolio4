@@ -11,8 +11,18 @@ class MovieListView extends StatelessWidget{
     return ListView.builder(
         itemCount: movies.length,
         itemBuilder: (context , index) {
-          return Placeholder();
+          return MovieItemList(movie: movies[index]);
         }
     );
+  }
+}
+
+class MovieItemList extends StatelessWidget{
+  final Movie movie;
+
+  const MovieItemList({required this.movie});
+
+  Widget build(BuildContext context) {
+    return Placeholder();
   }
 }
