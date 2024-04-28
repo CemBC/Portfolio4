@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:portfolio4/Portfolio4/Detail_Screen.dart';
 
 import 'package:portfolio4/Portfolio4/Moive.dart';
 
@@ -63,7 +64,7 @@ class MovieItemList extends StatelessWidget{
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => Placeholder()
+                        builder: (context) => DetailScreen(title: movie.title, plot: movie.plot, year: movie.year, writer: movie.writer)
                 ));
               },
             ),
